@@ -12,7 +12,7 @@ API_ID = int(os.environ.get("API_ID", 34783446))
 API_HASH = os.environ.get("API_HASH", "c1da051b38797498a32805f762c36bd3")
 STRING_SESSION = os.environ.get("STRING_SESSION", "")
 SOURCE_CHANNEL = int(os.environ.get("SOURCE_CHANNEL", -1004470754053))
-TARGET_CHANNEL = int(os.environ.get("TARGET_CHANNEL", -1002592984675))
+TARGET_CHANNEL = int(os.environ.get("TARGET_CHANNEL", -1004311171030))
 DELETE_DELAY = int(os.environ.get("DELETE_DELAY", 20))
 GAP_DELAY = int(os.environ.get("GAP_DELAY", 20))
 
