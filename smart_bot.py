@@ -12,7 +12,7 @@ API_ID = int(os.environ.get("API_ID", 34783446))
 API_HASH = os.environ.get("API_HASH", "c1da051b38797498a32805f762c36bd3")
 STRING_SESSION = os.environ.get("STRING_SESSION", "")
 SOURCE_CHANNEL = int(os.environ.get("SOURCE_CHANNEL", -1004470754053))
-TARGET_CHANNEL = int(os.environ.get("TARGET_CHANNEL", -1004395330130))
+TARGET_CHANNEL = int(os.environ.get("TARGET_CHANNEL", -1002592984675))
 DELETE_DELAY = int(os.environ.get("DELETE_DELAY", 20))
 GAP_DELAY = int(os.environ.get("GAP_DELAY", 20))
 
@@ -102,7 +102,7 @@ async def handler(event):
                         f.write(card_hash + "\n")
 
                     try:
-                        msg = await client.send_message(TARGET_CHANNEL, f"/chk {full_cc}")
+                        msg = await client.send_message(TARGET_CHANNEL, f"/au {full_cc}")
                         msg_counter += 1
                         print(f"✅ SENT: {full_cc[:10]}*** | Total: {msg_counter}")
                         await asyncio.sleep(DELETE_DELAY)
